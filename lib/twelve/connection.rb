@@ -19,7 +19,7 @@ class Twelve
         builder.adapter   Faraday.default_adapter
       end
 
-      self.headers["X-Gauges-Token"] = "#{access_token}" if access_token
+      self.headers["X-Gauges-Token"] = access_token.to_s if access_token
       self.headers["Accept"] = 'application/json'
     end
   end
