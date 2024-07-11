@@ -19,7 +19,7 @@ class Twelve
         # Returns json
         #
         def content(*args)
-          attributes = {}
+          {}
 
           connection.get do |request|
             request.url "#{path_prefix}/content"

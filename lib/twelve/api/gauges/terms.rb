@@ -19,7 +19,7 @@ class Twelve
         # Returns json
         #
         def terms(*args)
-          attributes = {}
+          {}
 
           connection.get do |request|
             request.url "#{path_prefix}/terms"

@@ -19,7 +19,7 @@ class Twelve
         # Returns json
         #
         def resolutions(date=nil)
-          attributes = {}
+          {}
 
           connection.get do |request|
             request.url "#{path_prefix}/resolutions"

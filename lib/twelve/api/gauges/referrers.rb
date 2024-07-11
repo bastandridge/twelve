@@ -19,7 +19,7 @@ class Twelve
         # Returns json
         #
         def referrers(*args)
-          attributes = {}
+          {}
 
           connection.get do |request|
             request.url "#{path_prefix}/referrers"
